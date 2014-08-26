@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'rexml/document'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -15,7 +16,7 @@ module JCM2
       generate.view_specs false
       generate.helper_specs false
       generate.controller_specs false
-      generate.test_framework  :test_unit, fixture: false
+      generate.test_unit false
     end
   end
 end

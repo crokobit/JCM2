@@ -1,0 +1,4 @@
+= link_to "Refresh", refresh_path
+- Article.all.order(pubDate: :desc).each do |article|
+  %p= article.title
+  %p= article.pubDate
